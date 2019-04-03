@@ -1,0 +1,41 @@
+module.exports = {
+  'extends': 'airbnb-base',
+  "env": {
+      "mocha": true
+  },
+  'rules': {
+    'linebreak-style': 'off', 
+    'no-console': 'off',
+    'consistent-return': 'off',
+    'no-prototype-builtins': 'off',
+    'class-methods-use-this': 'off',
+    'comma-dangle': 'off',
+    'max-len': ['error', 200],
+    'prefer-destructuring': 'off',
+    'no-trailing-spaces': 'off',
+    'eqeqeq': 'off',
+    'no-restricted-globals': 'off',
+    'import/named': 'off',
+    'max-len': 'off',
+    'no-bitwise': 'off',
+    "import/prefer-default-export": 'off',
+    'no-plusplus': 'off',
+    'no-unused-vars': 'off',
+    'camelcase': 'off',
+    'no-await-in-loop': 'off',
+    'prefer-const': 'off',
+    'no-restricted-syntax': 'off',
+    'no-await-in-loop': 'off',
+    'no-underscore-dangle': 'off',
+    'no-param-reassign': 'off',
+    'Math.pow': 'off',
+    'no-lone-blocks': 'off',
+    'no-case-declarations': 'off',
+    'no-shadow': 'off',
+    'import/order': 'off',
+    'import/no-unresolved': 'off',
+    'import/no-webpack-loader-syntax': 'off',
+    'import/extensions': 'off',
+    'no-debugger': 'off'
+  }
+};
