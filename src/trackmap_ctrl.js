@@ -281,12 +281,18 @@ export class TrackMapCtrl extends MetricsPanelCtrl {
     //   return;
     // }
     const source = data[0];
-    const datapoints = source.datapoints;
+    this.coords = source.datapoints.map((item) => {
+      const point = JSON.parse(item[0]);
+      return {
+        position: L.latLng(point.wgs84Lat, point.wgs84Lng),
+        timestamp: item[1]
+      };
+    });
 
-    this.coords = datapoints.map(point => ({
-      position: L.latLng(point[0][1], point[0][0]),
-      timestamp: point[1]
-    }));
+    // this.coords = datapoints.map(point => ({
+    //   position: L.latLng(point[0][1], point[0][0]),
+    //   timestamp: point[1]
+    // }));
     this.addDataToMap();
   }
 
