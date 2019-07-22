@@ -196,6 +196,7 @@ export class TrackMapCtrl extends MetricsPanelCtrl {
       radius: 7
     }).addTo(this.leafMap);
 
+    L.control.scale().addTo(this.leafMap);
     // Events
     this.leafMap.on('baselayerchange', this.mapBaseLayerChange.bind(this));
     this.leafMap.on('boxzoomend', this.mapZoomToBox.bind(this));
