@@ -32,7 +32,7 @@
     "eslint-plugin-import": "^2.16.0",
     "@babel/core": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
-    "grunt": "^1.0.3",
+    "grunt": "^1.5.2",
     "grunt-babel": "^8.0.0",
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-clean": "^2.0.0",
